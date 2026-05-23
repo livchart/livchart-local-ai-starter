@@ -1,0 +1,9 @@
+.git
+.github
+.docker-config
+secrets
+packages
+data
+logs
+README.md
+*.log

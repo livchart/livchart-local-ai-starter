@@ -1,0 +1,903 @@
+[
+  {
+    "id": "2248d2e6-4486-4481-aebe-a356db375693",
+    "name": "Modern Fresh Dashboard (Template)",
+    "subject_id": null,
+    "is_default": false,
+    "layout": [
+      {
+        "x": 0,
+        "y": 0,
+        "w": 3,
+        "h": 3,
+        "id": "widget_1770143896534_1",
+        "data-custom-css": "background-color: #dcfce7 !important; color: #166534; border: 1px solid #bbf7d0 !important;",
+        "data-custom-title": "Daily Sales",
+        "data-etl-id": "",
+        "data-show-title": "true",
+        "data-stat-column": "amount",
+        "data-stat-operation": "sum",
+        "data-widget-type": "Statistic"
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "w": 3,
+        "h": 3,
+        "id": "widget_1770143896534_2",
+        "data-custom-css": "background-color: #e0f2fe !important; color: #075985; border: 1px solid #bae6fd !important;",
+        "data-custom-title": "New Customers",
+        "data-etl-id": "",
+        "data-show-title": "true",
+        "data-stat-column": "*",
+        "data-stat-operation": "count",
+        "data-widget-type": "Statistic"
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "w": 3,
+        "h": 3,
+        "id": "widget_1770143896534_3",
+        "data-custom-css": "background-color: #f3e8ff !important; color: #6b21a8; border: 1px solid #e9d5ff !important;",
+        "data-custom-title": "Returns",
+        "data-etl-id": "",
+        "data-show-title": "true",
+        "data-stat-column": "*",
+        "data-stat-operation": "count",
+        "data-widget-type": "Statistic"
+      },
+      {
+        "x": 9,
+        "y": 0,
+        "w": 3,
+        "h": 6,
+        "id": "widget_1770143896534_4",
+        "data-chart-id": "",
+        "data-custom-title": "Top Products",
+        "data-show-title": "true",
+        "data-widget-type": "Chart"
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "w": 9,
+        "h": 5,
+        "id": "widget_1770143896534_5",
+        "data-chart-id": "",
+        "data-custom-title": "Revenue Growth Overview",
+        "data-show-title": "true",
+        "data-widget-type": "Chart"
+      },
+      {
+        "x": 0,
+        "y": 8,
+        "w": 4,
+        "h": 4,
+        "id": "widget_1770143896534_6",
+        "data-chart-id": "",
+        "data-custom-title": "Regional Map",
+        "data-show-title": "true",
+        "data-widget-type": "Chart"
+      },
+      {
+        "x": 4,
+        "y": 8,
+        "w": 8,
+        "h": 4,
+        "id": "widget_1770143896534_7",
+        "data-chart-id": "",
+        "data-custom-title": "Marketing Campaign Performance",
+        "data-show-title": "true",
+        "data-widget-type": "Chart"
+      }
+    ],
+    "css": "\n/* Dashboard Container Only - Scoped Background */\n.grid-stack {\n    background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%) !important; /* Mint to White */\n    border-radius: 20px;\n    padding: 30px !important; /* More breathing room around edges */\n}\n\n/* Base Widget Style - Clean White */\n.grid-stack-item-content {\n    background-color: #ffffff !important;\n    border: 1px solid rgba(0,0,0,0.03) !important;\n    border-radius: 24px !important;\n    box-shadow: 0 15px 35px rgba(0,0,0,0.05), 0 5px 15px rgba(0,0,0,0.03) !important;\n    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s ease;\n}\n\n.grid-stack-item-content:hover {\n    transform: translateY(-5px);\n    box-shadow: 0 20px 40px rgba(0,0,0,0.08), 0 10px 20px rgba(0,0,0,0.05) !important;\n}\n\n/* Widget Header - Clean & Minimal */\n.widget-header {\n    background: transparent !important;\n    border-bottom: none !important;\n    padding: 20px 25px 5px 25px !important;\n    color: #475569;\n    font-size: 0.9rem;\n    font-weight: 700;\n    letter-spacing: 0.5px;\n}\n\n.widget-content {\n    padding: 10px 25px 25px 25px !important;\n    color: #334155;\n}\n\n/* Make gaps feel wider by adding internal margin to content */\n/* GridStack handles outer positioning, we use this for inner spacing feel */\n",
+    "is_template": true
+  },
+  {
+    "id": "f11849cd-d1c9-4e40-89ba-e6838256dcff",
+    "name": "Executive Summary (Template)",
+    "subject_id": null,
+    "is_default": false,
+    "is_template": true,
+    "layout": [
+      {
+        "x": 0,
+        "y": 0,
+        "w": 3,
+        "h": 3,
+        "data-widget-type": "Statistic",
+        "data-custom-css": "background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%) !important; color: white; border:none !important;",
+        "data-custom-title": "Revenue",
+        "id": "widget_1770150919407_0"
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "w": 3,
+        "h": 3,
+        "data-widget-type": "Statistic",
+        "data-custom-css": "background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%) !important; color: white; border:none !important;",
+        "data-custom-title": "Profit",
+        "id": "widget_1770150919407_1"
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "w": 3,
+        "h": 3,
+        "data-widget-type": "Statistic",
+        "data-custom-css": "background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important; color: white; border:none !important;",
+        "data-custom-title": "Orders",
+        "id": "widget_1770150919407_2"
+      },
+      {
+        "x": 9,
+        "y": 0,
+        "w": 3,
+        "h": 3,
+        "data-widget-type": "Statistic",
+        "data-custom-css": "background: linear-gradient(135deg, #f97316 0%, #ea580c 100%) !important; color: white; border:none !important;",
+        "data-custom-title": "Growth",
+        "id": "widget_1770150919407_3"
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "w": 8,
+        "h": 6,
+        "data-widget-type": "Chart",
+        "data-custom-title": "Monthly Trend",
+        "id": "widget_1770150919407_4"
+      },
+      {
+        "x": 8,
+        "y": 3,
+        "w": 4,
+        "h": 6,
+        "data-widget-type": "Chart",
+        "data-custom-title": "Category Share",
+        "id": "widget_1770150919407_5"
+      }
+    ],
+    "css": "\n    .grid-stack {\n        background: linear-gradient(135deg, #e0f2fe 0%, #ffffff 100%) !important;\n        border-radius: 20px;\n        padding: 30px !important;\n    }\n    .grid-stack-item-content {\n        background-color: #ffffff !important;\n        border: 1px solid rgba(0,0,0,0.03) !important;\n        border-radius: 24px !important;\n        box-shadow: 0 10px 25px rgba(0,0,0,0.04), 0 5px 10px rgba(0,0,0,0.02) !important;\n        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);\n    }\n    .grid-stack-item-content:hover {\n        transform: translateY(-5px);\n        box-shadow: 0 20px 40px rgba(0,0,0,0.08), 0 10px 20px rgba(0,0,0,0.05) !important;\n    }\n    .widget-header {\n        background: transparent !important;\n        border-bottom: none !important;\n        padding: 20px 25px 5px 25px !important;\n        color: #475569;\n        font-weight: 700;\n        letter-spacing: 0.5px;\n    }\n    "
+  },
+  {
+    "id": "d701cdca-fece-45be-b1de-b63cc6d76a68",
+    "name": "Sales Performance (Template)",
+    "subject_id": null,
+    "is_default": false,
+    "is_template": true,
+    "layout": [
+      {
+        "x": 0,
+        "y": 0,
+        "w": 9,
+        "h": 5,
+        "data-widget-type": "Chart",
+        "data-custom-title": "Sales Overview",
+        "id": "widget_1770150919407_0"
+      },
+      {
+        "x": 9,
+        "y": 0,
+        "w": 3,
+        "h": 5,
+        "data-widget-type": "Statistic",
+        "data-custom-css": "background: linear-gradient(135deg, #f97316 0%, #ea580c 100%) !important; color: white; border:none !important;",
+        "data-custom-title": "Top Product",
+        "id": "widget_1770150919407_1"
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "w": 4,
+        "h": 4,
+        "data-widget-type": "Chart",
+        "data-custom-title": "Region Map",
+        "id": "widget_1770150919407_2"
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "w": 4,
+        "h": 4,
+        "data-widget-type": "Chart",
+        "data-custom-title": "Customer Segments",
+        "id": "widget_1770150919407_3"
+      },
+      {
+        "x": 8,
+        "y": 5,
+        "w": 4,
+        "h": 4,
+        "data-widget-type": "Grid",
+        "data-custom-title": "Recent Transactions",
+        "id": "widget_1770150919407_4"
+      }
+    ],
+    "css": "\n    .grid-stack {\n        background: linear-gradient(135deg, #fff7ed 0%, #ffffff 100%) !important;\n        border-radius: 20px;\n        padding: 30px !important;\n    }\n    .grid-stack-item-content {\n        background-color: #ffffff !important;\n        border: 1px solid rgba(0,0,0,0.03) !important;\n        border-radius: 24px !important;\n        box-shadow: 0 10px 25px rgba(0,0,0,0.04), 0 5px 10px rgba(0,0,0,0.02) !important;\n        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);\n    }\n    .grid-stack-item-content:hover {\n        transform: translateY(-5px);\n        box-shadow: 0 20px 40px rgba(0,0,0,0.08), 0 10px 20px rgba(0,0,0,0.05) !important;\n    }\n    .widget-header {\n        background: transparent !important;\n        border-bottom: none !important;\n        padding: 20px 25px 5px 25px !important;\n        color: #475569;\n        font-weight: 700;\n        letter-spacing: 0.5px;\n    }\n    "
+  },
+  {
+    "id": "728f22ba-281e-49a6-9cd4-b85c98b6ae52",
+    "name": "Marketing Insights (Template)",
+    "subject_id": null,
+    "is_default": false,
+    "is_template": true,
+    "layout": [
+      {
+        "x": 0,
+        "y": 0,
+        "w": 4,
+        "h": 2,
+        "data-widget-type": "Statistic",
+        "data-custom-css": "background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%) !important; color: white; border:none !important;",
+        "data-custom-title": "Campaign Reach",
+        "id": "widget_1770150919407_0"
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "w": 4,
+        "h": 2,
+        "data-widget-type": "Statistic",
+        "data-custom-css": "background: linear-gradient(135deg, #ec4899 0%, #db2777 100%) !important; color: white; border:none !important;",
+        "data-custom-title": "Engagement",
+        "id": "widget_1770150919407_1"
+      },
+      {
+        "x": 8,
+        "y": 0,
+        "w": 4,
+        "h": 2,
+        "data-widget-type": "Statistic",
+        "data-custom-css": "background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%) !important; color: white; border:none !important;",
+        "data-custom-title": "Conversion",
+        "id": "widget_1770150919407_2"
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "w": 6,
+        "h": 5,
+        "data-widget-type": "Chart",
+        "data-custom-title": "Channel Performance",
+        "id": "widget_1770150919407_3"
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "w": 6,
+        "h": 5,
+        "data-widget-type": "Chart",
+        "data-custom-title": "Ad Spend vs ROI",
+        "id": "widget_1770150919407_4"
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "w": 12,
+        "h": 4,
+        "data-widget-type": "Chart",
+        "data-custom-title": "Social Media Trends",
+        "id": "widget_1770150919407_5"
+      }
+    ],
+    "css": "\n    .grid-stack {\n        background: linear-gradient(135deg, #f5f3ff 0%, #ffffff 100%) !important;\n        border-radius: 20px;\n        padding: 30px !important;\n    }\n    .grid-stack-item-content {\n        background-color: #ffffff !important;\n        border: 1px solid rgba(0,0,0,0.03) !important;\n        border-radius: 24px !important;\n        box-shadow: 0 10px 25px rgba(0,0,0,0.04), 0 5px 10px rgba(0,0,0,0.02) !important;\n        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);\n    }\n    .grid-stack-item-content:hover {\n        transform: translateY(-5px);\n        box-shadow: 0 20px 40px rgba(0,0,0,0.08), 0 10px 20px rgba(0,0,0,0.05) !important;\n    }\n    .widget-header {\n        background: transparent !important;\n        border-bottom: none !important;\n        padding: 20px 25px 5px 25px !important;\n        color: #475569;\n        font-weight: 700;\n        letter-spacing: 0.5px;\n    }\n    "
+  },
+  {
+    "id": "1be2ca5d-6d57-4583-8133-e62e0bb6df57",
+    "name": "Operational View (Template)",
+    "subject_id": null,
+    "is_default": false,
+    "is_template": true,
+    "layout": [
+      {
+        "x": 0,
+        "y": 0,
+        "w": 2,
+        "h": 2,
+        "data-widget-type": "Statistic",
+        "data-custom-css": "background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important; color: white; border:none !important;",
+        "data-custom-title": "Active",
+        "id": "widget_1770150919407_0"
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "w": 2,
+        "h": 2,
+        "data-widget-type": "Statistic",
+        "data-custom-css": "background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%) !important; color: white; border:none !important;",
+        "data-custom-title": "Pending",
+        "id": "widget_1770150919407_1"
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "w": 4,
+        "h": 7,
+        "data-widget-type": "Grid",
+        "data-custom-title": "Task List",
+        "id": "widget_1770150919407_2"
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "w": 8,
+        "h": 5,
+        "data-widget-type": "Chart",
+        "data-custom-title": "Efficiency Metrics",
+        "id": "widget_1770150919407_3"
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "w": 4,
+        "h": 4,
+        "data-widget-type": "Chart",
+        "data-custom-title": "Resource Usage",
+        "id": "widget_1770150919407_4"
+      },
+      {
+        "x": 8,
+        "y": 5,
+        "w": 4,
+        "h": 4,
+        "data-widget-type": "Clock",
+        "data-custom-css": "background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important; color: white; border:none !important;",
+        "data-show-title": "false",
+        "id": "widget_1770150919407_5"
+      }
+    ],
+    "css": "\n    .grid-stack {\n        background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%) !important;\n        border-radius: 20px;\n        padding: 30px !important;\n    }\n    .grid-stack-item-content {\n        background-color: #ffffff !important;\n        border: 1px solid rgba(0,0,0,0.03) !important;\n        border-radius: 24px !important;\n        box-shadow: 0 10px 25px rgba(0,0,0,0.04), 0 5px 10px rgba(0,0,0,0.02) !important;\n        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);\n    }\n    .grid-stack-item-content:hover {\n        transform: translateY(-5px);\n        box-shadow: 0 20px 40px rgba(0,0,0,0.08), 0 10px 20px rgba(0,0,0,0.05) !important;\n    }\n    .widget-header {\n        background: transparent !important;\n        border-bottom: none !important;\n        padding: 20px 25px 5px 25px !important;\n        color: #475569;\n        font-weight: 700;\n        letter-spacing: 0.5px;\n    }\n    "
+  },
+  {
+    "id": "f7d054f3-4fa4-4be9-93b7-82c8760da249",
+    "name": "Financial Overview (Template)",
+    "subject_id": null,
+    "is_default": false,
+    "is_template": true,
+    "layout": [
+      {
+        "x": 0,
+        "y": 0,
+        "w": 6,
+        "h": 4,
+        "data-widget-type": "Chart",
+        "data-custom-title": "Cash Flow",
+        "id": "widget_1770150919407_0"
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "w": 6,
+        "h": 4,
+        "data-widget-type": "Chart",
+        "data-custom-title": "Expense Breakdown",
+        "id": "widget_1770150919407_1"
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "w": 3,
+        "h": 2,
+        "data-widget-type": "Statistic",
+        "data-custom-css": "background: linear-gradient(135deg, #ec4899 0%, #db2777 100%) !important; color: white; border:none !important;",
+        "data-custom-title": "Net Income",
+        "id": "widget_1770150919407_2"
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "w": 3,
+        "h": 2,
+        "data-widget-type": "Statistic",
+        "data-custom-css": "background: linear-gradient(135deg, #f97316 0%, #ea580c 100%) !important; color: white; border:none !important;",
+        "data-custom-title": "Gross Margin",
+        "id": "widget_1770150919407_3"
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "w": 6,
+        "h": 5,
+        "data-widget-type": "Grid",
+        "data-custom-title": "Recent Invoices",
+        "id": "widget_1770150919407_4"
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "w": 6,
+        "h": 3,
+        "data-widget-type": "Chart",
+        "data-custom-title": "Forecast",
+        "id": "widget_1770150919407_5"
+      }
+    ],
+    "css": "\n    .grid-stack {\n        background: linear-gradient(135deg, #fff1f2 0%, #ffffff 100%) !important;\n        border-radius: 20px;\n        padding: 30px !important;\n    }\n    .grid-stack-item-content {\n        background-color: #ffffff !important;\n        border: 1px solid rgba(0,0,0,0.03) !important;\n        border-radius: 24px !important;\n        box-shadow: 0 10px 25px rgba(0,0,0,0.04), 0 5px 10px rgba(0,0,0,0.02) !important;\n        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);\n    }\n    .grid-stack-item-content:hover {\n        transform: translateY(-5px);\n        box-shadow: 0 20px 40px rgba(0,0,0,0.08), 0 10px 20px rgba(0,0,0,0.05) !important;\n    }\n    .widget-header {\n        background: transparent !important;\n        border-bottom: none !important;\n        padding: 20px 25px 5px 25px !important;\n        color: #475569;\n        font-weight: 700;\n        letter-spacing: 0.5px;\n    }\n    "
+  },
+  {
+    "id": "52829f2b-93b8-41b6-b862-5119c9118f69",
+    "name": "Compact Analytics (Template)",
+    "subject_id": null,
+    "is_default": false,
+    "is_template": true,
+    "layout": [
+      {
+        "x": 0,
+        "y": 0,
+        "w": 4,
+        "h": 3,
+        "data-widget-type": "Chart",
+        "data-custom-title": "Metric A",
+        "id": "widget_1770150919407_0"
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "w": 4,
+        "h": 3,
+        "data-widget-type": "Chart",
+        "data-custom-title": "Metric B",
+        "id": "widget_1770150919407_1"
+      },
+      {
+        "x": 8,
+        "y": 0,
+        "w": 4,
+        "h": 3,
+        "data-widget-type": "Chart",
+        "data-custom-title": "Metric C",
+        "id": "widget_1770150919407_2"
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "w": 6,
+        "h": 4,
+        "data-widget-type": "Chart",
+        "data-custom-title": "Trend Analysis",
+        "id": "widget_1770150919407_3"
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "w": 6,
+        "h": 4,
+        "data-widget-type": "Grid",
+        "data-custom-title": "Detailed Data",
+        "id": "widget_1770150919407_4"
+      }
+    ],
+    "css": "\n    .grid-stack {\n        background: linear-gradient(135deg, #e0f2fe 0%, #ffffff 100%) !important;\n        border-radius: 20px;\n        padding: 30px !important;\n    }\n    .grid-stack-item-content {\n        background-color: #ffffff !important;\n        border: 1px solid rgba(0,0,0,0.03) !important;\n        border-radius: 24px !important;\n        box-shadow: 0 10px 25px rgba(0,0,0,0.04), 0 5px 10px rgba(0,0,0,0.02) !important;\n        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);\n    }\n    .grid-stack-item-content:hover {\n        transform: translateY(-5px);\n        box-shadow: 0 20px 40px rgba(0,0,0,0.08), 0 10px 20px rgba(0,0,0,0.05) !important;\n    }\n    .widget-header {\n        background: transparent !important;\n        border-bottom: none !important;\n        padding: 20px 25px 5px 25px !important;\n        color: #475569;\n        font-weight: 700;\n        letter-spacing: 0.5px;\n    }\n    "
+  },
+  {
+    "id": "d83dd7c1-cd2c-44b9-9503-0fd5923fdbb1",
+    "name": "Media Wall (Template)",
+    "subject_id": null,
+    "is_default": false,
+    "is_template": true,
+    "layout": [
+      {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 6,
+        "data-widget-type": "Slideshow",
+        "data-custom-title": "Live Feed",
+        "id": "widget_1770150919407_0"
+      },
+      {
+        "x": 8,
+        "y": 0,
+        "w": 4,
+        "h": 2,
+        "data-widget-type": "Clock",
+        "data-custom-css": "background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%) !important; color: white; border:none !important;",
+        "data-show-title": "false",
+        "id": "widget_1770150919407_1"
+      },
+      {
+        "x": 8,
+        "y": 2,
+        "w": 4,
+        "h": 4,
+        "data-widget-type": "Chart",
+        "data-custom-title": "Audience Stats",
+        "id": "widget_1770150919407_2"
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "w": 12,
+        "h": 2,
+        "data-widget-type": "Grid",
+        "data-custom-title": "Latest News",
+        "id": "widget_1770150919407_3"
+      }
+    ],
+    "css": "\n    .grid-stack {\n        background: linear-gradient(135deg, #f5f3ff 0%, #ffffff 100%) !important;\n        border-radius: 20px;\n        padding: 30px !important;\n    }\n    .grid-stack-item-content {\n        background-color: #ffffff !important;\n        border: 1px solid rgba(0,0,0,0.03) !important;\n        border-radius: 24px !important;\n        box-shadow: 0 10px 25px rgba(0,0,0,0.04), 0 5px 10px rgba(0,0,0,0.02) !important;\n        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);\n    }\n    .grid-stack-item-content:hover {\n        transform: translateY(-5px);\n        box-shadow: 0 20px 40px rgba(0,0,0,0.08), 0 10px 20px rgba(0,0,0,0.05) !important;\n    }\n    .widget-header {\n        background: transparent !important;\n        border-bottom: none !important;\n        padding: 20px 25px 5px 25px !important;\n        color: #475569;\n        font-weight: 700;\n        letter-spacing: 0.5px;\n    }\n    "
+  },
+  {
+    "id": "40cdd30d-ef78-43bc-8cae-cfbd00e95e5c",
+    "name": "Project Status (Template)",
+    "subject_id": null,
+    "is_default": false,
+    "is_template": true,
+    "layout": [
+      {
+        "x": 0,
+        "y": 0,
+        "w": 3,
+        "h": 6,
+        "data-widget-type": "Statistic",
+        "data-custom-css": "background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important; color: white; border:none !important;",
+        "data-custom-title": "Completion %",
+        "id": "widget_1770150919407_0"
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "w": 9,
+        "h": 3,
+        "data-widget-type": "Chart",
+        "data-custom-title": "Gantt / Timeline",
+        "id": "widget_1770150919407_1"
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "w": 3,
+        "h": 3,
+        "data-widget-type": "Statistic",
+        "data-custom-css": "background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%) !important; color: white; border:none !important;",
+        "data-custom-title": "Open Bugs",
+        "id": "widget_1770150919407_2"
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "w": 3,
+        "h": 3,
+        "data-widget-type": "Statistic",
+        "data-custom-css": "background: linear-gradient(135deg, #f97316 0%, #ea580c 100%) !important; color: white; border:none !important;",
+        "data-custom-title": "Pending Reviews",
+        "id": "widget_1770150919407_3"
+      },
+      {
+        "x": 9,
+        "y": 3,
+        "w": 3,
+        "h": 3,
+        "data-widget-type": "Statistic",
+        "data-custom-css": "background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%) !important; color: white; border:none !important;",
+        "data-custom-title": "Team Velocity",
+        "id": "widget_1770150919407_4"
+      }
+    ],
+    "css": "\n    .grid-stack {\n        background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%) !important;\n        border-radius: 20px;\n        padding: 30px !important;\n    }\n    .grid-stack-item-content {\n        background-color: #ffffff !important;\n        border: 1px solid rgba(0,0,0,0.03) !important;\n        border-radius: 24px !important;\n        box-shadow: 0 10px 25px rgba(0,0,0,0.04), 0 5px 10px rgba(0,0,0,0.02) !important;\n        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);\n    }\n    .grid-stack-item-content:hover {\n        transform: translateY(-5px);\n        box-shadow: 0 20px 40px rgba(0,0,0,0.08), 0 10px 20px rgba(0,0,0,0.05) !important;\n    }\n    .widget-header {\n        background: transparent !important;\n        border-bottom: none !important;\n        padding: 20px 25px 5px 25px !important;\n        color: #475569;\n        font-weight: 700;\n        letter-spacing: 0.5px;\n    }\n    "
+  },
+  {
+    "id": "282f7adf-7bb8-4be7-8abb-0f255b822d11",
+    "name": "Inventory Tracker (Template)",
+    "subject_id": null,
+    "is_default": false,
+    "is_template": true,
+    "layout": [
+      {
+        "x": 0,
+        "y": 0,
+        "w": 4,
+        "h": 4,
+        "data-widget-type": "Chart",
+        "data-custom-title": "Stock Levels",
+        "id": "widget_1770150919407_0"
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "w": 4,
+        "h": 4,
+        "data-widget-type": "Chart",
+        "data-custom-title": "Turnover Rate",
+        "id": "widget_1770150919407_1"
+      },
+      {
+        "x": 8,
+        "y": 0,
+        "w": 4,
+        "h": 4,
+        "data-widget-type": "Statistic",
+        "data-custom-css": "background: linear-gradient(135deg, #f97316 0%, #ea580c 100%) !important; color: white; border:none !important;",
+        "data-custom-title": "Low Stock Alert",
+        "id": "widget_1770150919407_2"
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "w": 12,
+        "h": 5,
+        "data-widget-type": "Grid",
+        "data-custom-title": "Product Catalog",
+        "id": "widget_1770150919407_3"
+      }
+    ],
+    "css": "\n    .grid-stack {\n        background: linear-gradient(135deg, #fff7ed 0%, #ffffff 100%) !important;\n        border-radius: 20px;\n        padding: 30px !important;\n    }\n    .grid-stack-item-content {\n        background-color: #ffffff !important;\n        border: 1px solid rgba(0,0,0,0.03) !important;\n        border-radius: 24px !important;\n        box-shadow: 0 10px 25px rgba(0,0,0,0.04), 0 5px 10px rgba(0,0,0,0.02) !important;\n        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);\n    }\n    .grid-stack-item-content:hover {\n        transform: translateY(-5px);\n        box-shadow: 0 20px 40px rgba(0,0,0,0.08), 0 10px 20px rgba(0,0,0,0.05) !important;\n    }\n    .widget-header {\n        background: transparent !important;\n        border-bottom: none !important;\n        padding: 20px 25px 5px 25px !important;\n        color: #475569;\n        font-weight: 700;\n        letter-spacing: 0.5px;\n    }\n    "
+  },
+  {
+    "id": "fec12edf-28c3-47ad-a8dc-d10bd2ceb840",
+    "name": "Minimalist Board (Template)",
+    "subject_id": null,
+    "is_default": false,
+    "is_template": true,
+    "layout": [
+      {
+        "x": 0,
+        "y": 0,
+        "w": 6,
+        "h": 4,
+        "data-widget-type": "Chart",
+        "data-show-title": "false",
+        "id": "widget_1770150919407_0"
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "w": 6,
+        "h": 4,
+        "data-widget-type": "Chart",
+        "data-show-title": "false",
+        "id": "widget_1770150919407_1"
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "w": 4,
+        "h": 4,
+        "data-widget-type": "Chart",
+        "data-show-title": "false",
+        "id": "widget_1770150919407_2"
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "w": 4,
+        "h": 4,
+        "data-widget-type": "Chart",
+        "data-show-title": "false",
+        "id": "widget_1770150919407_3"
+      },
+      {
+        "x": 8,
+        "y": 4,
+        "w": 4,
+        "h": 4,
+        "data-widget-type": "Chart",
+        "data-show-title": "false",
+        "id": "widget_1770150919407_4"
+      }
+    ],
+    "css": "\n    .grid-stack {\n        background-color: #f8fafc !important;\n        border-radius: 20px;\n        padding: 30px !important;\n    }\n    .grid-stack-item-content {\n        background-color: #ffffff !important;\n        border: 1px solid rgba(0,0,0,0.03) !important;\n        border-radius: 24px !important;\n        box-shadow: 0 10px 25px rgba(0,0,0,0.04), 0 5px 10px rgba(0,0,0,0.02) !important;\n        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);\n    }\n    .grid-stack-item-content:hover {\n        transform: translateY(-5px);\n        box-shadow: 0 20px 40px rgba(0,0,0,0.08), 0 10px 20px rgba(0,0,0,0.05) !important;\n    }\n    .widget-header {\n        background: transparent !important;\n        border-bottom: none !important;\n        padding: 20px 25px 5px 25px !important;\n        color: #475569;\n        font-weight: 700;\n        letter-spacing: 0.5px;\n    }\n    "
+  },
+  {
+    "id": "d90ff1c2-b9dd-429e-98c9-8a9ca4d0ac9d",
+    "name": "Sales Analytics",
+    "subject_id": "1",
+    "is_default": false,
+    "is_template": false,
+    "refresh_interval": 0,
+    "load_concurrency": 1,
+    "css": "",
+    "css_preset": "manual",
+    "layout": [
+      {
+        "x": 0,
+        "y": 0,
+        "w": 12,
+        "h": 2,
+        "id": "widget_1779528617376_3df4ee2d",
+        "data-widget-id": "widget_1779528617376_3df4ee2d",
+        "data-custom-css": "",
+        "data-custom-title": "",
+        "data-html-content": "PGRpdiBzdHlsZT0icGFkZGluZzoxNnB4IDIwcHg7IGJvcmRlci1yYWRpdXM6MTRweDsgYmFja2dyb3VuZDojMWYyOTM3OyBjb2xvcjojZjlmYWZiOyBmb250LXNpemU6MTdweDsgbGluZS1oZWlnaHQ6MS44OyBib3JkZXI6MXB4IHNvbGlkICMzNzQxNTE7Ij4KICDimqDvuI8gPHN0cm9uZz5BSSBJbnNpZ2h0PC9zdHJvbmc+IGZlYXR1cmVzIGFyZSB1bmF2YWlsYWJsZSBpbiB0aGlzIGRlbW8gbGljZW5zZS48YnI+CiAgVXNlIDxzdHJvbmc+Q2hhcnQgV2l6YXJkPC9zdHJvbmc+IHRvIGNyZWF0ZSBjaGFydHMgYW5kIDxzdHJvbmc+V29ya2Jvb2s8L3N0cm9uZz4gZm9yIEVUTCBhbmFseXNpcy48YnI+CiAgWW91IGNhbiBhbHNvIGV4cGxvcmUgdGhlIDxzdHJvbmc+UGxheWdyb3VuZDwvc3Ryb25nPiBmb3IgZmxleGlibGUgQUktcG93ZXJlZCBkYXRhIGFuYWx5c2lzIGFuZCBjaGFydCBnZW5lcmF0aW9uLgo8L2Rpdj4=",
+        "data-mobile-chrome": "compact",
+        "data-pdf-keep-with-next-row": "false",
+        "data-show-title": "false",
+        "data-use-custom-title": "false",
+        "data-widget-type": "HTML"
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "w": 4,
+        "h": 4,
+        "id": "widget_1779479215324_518c20d5",
+        "data-widget-id": "widget_1779479215324_518c20d5",
+        "data-chart-hierarchy": "[]",
+        "data-chart-id": "system_1",
+        "data-chart-is-hierarchy": "false",
+        "data-custom-css": "",
+        "data-custom-title": "",
+        "data-etl-id": "0c31fce7-c8cc-4f44-9b3a-ca7ca5b7297f",
+        "data-interaction-mode": "highlight",
+        "data-mobile-chrome": "compact",
+        "data-pdf-keep-with-next-row": "false",
+        "data-show-title": "true",
+        "data-use-custom-title": "false",
+        "data-widget-type": "Chart"
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "w": 4,
+        "h": 4,
+        "id": "widget_1779479215768_3655dec7",
+        "data-widget-id": "widget_1779479215768_3655dec7",
+        "data-chart-hierarchy": "[]",
+        "data-chart-id": "system_2",
+        "data-chart-is-hierarchy": "false",
+        "data-custom-css": "",
+        "data-custom-title": "",
+        "data-etl-id": "0c31fce7-c8cc-4f44-9b3a-ca7ca5b7297f",
+        "data-interaction-mode": "highlight",
+        "data-mobile-chrome": "compact",
+        "data-pdf-keep-with-next-row": "false",
+        "data-show-title": "true",
+        "data-use-custom-title": "false",
+        "data-widget-type": "Chart"
+      },
+      {
+        "x": 8,
+        "y": 2,
+        "w": 4,
+        "h": 4,
+        "id": "widget_1779479216113_e52540ec",
+        "data-widget-id": "widget_1779479216113_e52540ec",
+        "data-chart-hierarchy": "[]",
+        "data-chart-id": "system_3",
+        "data-chart-is-hierarchy": "false",
+        "data-custom-css": "",
+        "data-custom-title": "",
+        "data-etl-id": "0c31fce7-c8cc-4f44-9b3a-ca7ca5b7297f",
+        "data-interaction-mode": "highlight",
+        "data-mobile-chrome": "compact",
+        "data-pdf-keep-with-next-row": "false",
+        "data-show-title": "true",
+        "data-use-custom-title": "false",
+        "data-widget-type": "Chart"
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "w": 4,
+        "h": 4,
+        "id": "widget_1779479216284_80ccca26",
+        "data-widget-id": "widget_1779479216284_80ccca26",
+        "data-chart-hierarchy": "[]",
+        "data-chart-id": "system_5",
+        "data-chart-is-hierarchy": "false",
+        "data-custom-css": "",
+        "data-custom-title": "",
+        "data-etl-id": "0c31fce7-c8cc-4f44-9b3a-ca7ca5b7297f",
+        "data-interaction-mode": "highlight",
+        "data-mobile-chrome": "compact",
+        "data-pdf-keep-with-next-row": "false",
+        "data-show-title": "true",
+        "data-use-custom-title": "false",
+        "data-widget-type": "Chart"
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "w": 4,
+        "h": 4,
+        "id": "widget_1779479216749_3e35615e",
+        "data-widget-id": "widget_1779479216749_3e35615e",
+        "data-chart-hierarchy": "[]",
+        "data-chart-id": "system_6",
+        "data-chart-is-hierarchy": "false",
+        "data-custom-css": "",
+        "data-custom-title": "",
+        "data-etl-id": "0c31fce7-c8cc-4f44-9b3a-ca7ca5b7297f",
+        "data-interaction-mode": "highlight",
+        "data-mobile-chrome": "compact",
+        "data-pdf-keep-with-next-row": "false",
+        "data-show-title": "true",
+        "data-use-custom-title": "false",
+        "data-widget-type": "Chart"
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "w": 4,
+        "h": 4,
+        "id": "widget_1779479216929_728727de",
+        "data-widget-id": "widget_1779479216929_728727de",
+        "data-chart-hierarchy": "[]",
+        "data-chart-id": "system_4",
+        "data-chart-is-hierarchy": "false",
+        "data-custom-css": "",
+        "data-custom-title": "",
+        "data-etl-id": "0c31fce7-c8cc-4f44-9b3a-ca7ca5b7297f",
+        "data-interaction-mode": "highlight",
+        "data-mobile-chrome": "compact",
+        "data-pdf-keep-with-next-row": "false",
+        "data-show-title": "true",
+        "data-use-custom-title": "false",
+        "data-widget-type": "Chart"
+      }
+    ],
+    "mobile_layout": [
+      {
+        "id": "widget_1779479215324_518c20d5",
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 4,
+        "hidden": false,
+        "mobile_chrome": "compact"
+      },
+      {
+        "id": "widget_1779479215768_3655dec7",
+        "x": 4,
+        "y": 4,
+        "w": 4,
+        "h": 4,
+        "hidden": false,
+        "mobile_chrome": "compact"
+      },
+      {
+        "id": "widget_1779479216113_e52540ec",
+        "x": 0,
+        "y": 8,
+        "w": 4,
+        "h": 4,
+        "hidden": false,
+        "mobile_chrome": "compact"
+      },
+      {
+        "id": "widget_1779479216284_80ccca26",
+        "x": 4,
+        "y": 12,
+        "w": 4,
+        "h": 4,
+        "hidden": false,
+        "mobile_chrome": "compact"
+      },
+      {
+        "id": "widget_1779479216749_3e35615e",
+        "x": 0,
+        "y": 16,
+        "w": 4,
+        "h": 4,
+        "hidden": false,
+        "mobile_chrome": "compact"
+      },
+      {
+        "id": "widget_1779479216929_728727de",
+        "x": 4,
+        "y": 20,
+        "w": 4,
+        "h": 4,
+        "hidden": false,
+        "mobile_chrome": "compact"
+      },
+      {
+        "id": "widget_1779528617376_3df4ee2d",
+        "x": 0,
+        "y": 24,
+        "w": 4,
+        "h": 2,
+        "hidden": false,
+        "mobile_chrome": "compact"
+      }
+    ],
+    "interaction_matrix": {},
+    "sync_drilldown": false,
+    "ai_monitoring_policy": null,
+    "owner_user_id": null
+  }
+]

@@ -1,0 +1,62 @@
+{
+  "providers": {
+    "livaicloud": {
+      "api_key": "",
+      "model": "",
+      "enabled": true,
+      "domain": "https://livchart.com",
+      "active": true
+    },
+    "openai": {
+      "api_key": "",
+      "model": "gpt-5.4-mini",
+      "enabled": false,
+      "active": false
+    },
+    "anthropic": {
+      "api_key": "",
+      "model": "claude-sonnet-4-5-20250929",
+      "enabled": false,
+      "active": false
+    },
+    "google": {
+      "api_key": "",
+      "model": "gemini-2.5-flash",
+      "enabled": true,
+      "active": false
+    },
+    "glm": {
+      "api_key": "",
+      "model": "glm-5.1",
+      "enabled": false,
+      "active": false
+    },
+    "azure_openai": {
+      "api_key": "",
+      "endpoint": "",
+      "deployment": "",
+      "api_version": "2024-10-21",
+      "enabled": false,
+      "active": false
+    },
+    "openrouter": {
+      "api_key": "",
+      "model": "",
+      "enabled": false,
+      "active": false
+    }
+  },
+  "local_providers": {
+    "lm_studio": {
+      "host": "localhost",
+      "port": "1234",
+      "model": "",
+      "enabled": false,
+      "lm_studio_temperature": 0.0,
+      "lm_studio_top_p": 0.1,
+      "lm_studio_seed": 42
+    }
+  },
+  "default_provider": "livaicloud",
+  "ai_log_level": "basic"
+}

@@ -1,0 +1,43 @@
+services:
+  livchart:
+    image: ${LIVCHART_IMAGE:-livchart-local-ai-starter:latest}
+    build:
+      context: .
+      args:
+        LIVCHART_DOWNLOAD_URL: ${LIVCHART_DOWNLOAD_URL:-https://github.com/livchart/livchart/releases/latest/download/LivChart_Linux_Dist.zip}
+    hostname: livchart-local
+    mac_address: "02:42:ac:11:00:10"
+    environment:
+      LANG: C.UTF-8
+      LC_ALL: C.UTF-8
+      PYTHONUTF8: "1"
+      PYTHONIOENCODING: utf-8
+      LIVCHART_ENV: production
+      LIVCHART_LOG_LEVEL: INFO
+      LIVCHART_CONSOLE_LOG_ENABLED: "1"
+      LIVCHART_AI_PROVIDER: ${LIVCHART_AI_PROVIDER:-livaicloud}
+      LIVCHART_OLLAMA_MODEL: ${LIVCHART_OLLAMA_MODEL:-}
+      PORT: "5000"
+    ports:
+      - "${LIVCHART_HOST_PORT:-7000}:5000"
+    volumes:
+      - ${LIVCHART_LICENSE_FILE:-./secrets/license.key}:/opt/livchart/license.key:ro
+      - ${LIVCHART_ACTIVATION_FILE:-./secrets/activation.dat}:/opt/livchart/activation.dat
+      - livchart-config:/opt/livchart/config
+      - livchart-data:/opt/livchart/DataSet
+      - livchart-logs:/opt/livchart/logs
+    restart: unless-stopped
+
+  ollama:
+    image: ollama/ollama:latest
+    profiles:
+      - ollama
+    volumes:
+      - ollama-data:/root/.ollama
+    restart: unless-stopped
+
+volumes:
+  livchart-config:
+  livchart-data:
+  livchart-logs:
+  ollama-data:

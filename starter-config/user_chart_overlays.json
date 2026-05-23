@@ -1,0 +1,12 @@
+{
+  "1": {
+    "system_1": {
+      "target_value": null,
+      "target_label": "",
+      "note": "",
+      "forecast_enabled": false,
+      "forecast_model": "auto",
+      "forecast_horizon": 6
+    }
+  }
+}

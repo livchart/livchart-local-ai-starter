@@ -1,0 +1,414 @@
+{
+  "charts": [
+    {
+      "id": 1,
+      "title": "Weekly Sales Trend",
+      "description": "Monthly view of weekly sales changes over time",
+      "enabled": true,
+      "order": 99,
+      "chart_type": "line",
+      "x_column": "std_date",
+      "y_column": "Total Sales",
+      "interaction_key_column": "std_date",
+      "supports_cross_filter": true,
+      "recommended_hierarchy": [
+        {
+          "column": "std_year",
+          "type": "string",
+          "operation": "full",
+          "min": "",
+          "max": ""
+        },
+        {
+          "column": "std_quarter",
+          "type": "string",
+          "operation": "full",
+          "min": "",
+          "max": ""
+        },
+        {
+          "column": "std_month",
+          "type": "string",
+          "operation": "full",
+          "min": "",
+          "max": ""
+        },
+        {
+          "column": "std_day",
+          "type": "string",
+          "operation": "full",
+          "min": "",
+          "max": ""
+        }
+      ],
+      "metric_spec": {
+        "title": "Weekly Sales Trend",
+        "description": "Monthly view of weekly sales changes over time",
+        "edit_mode": "rebuild",
+        "chart_family": "line",
+        "x_dimension": "std_date",
+        "x_role": "time",
+        "time_grain": "month",
+        "breakout_dimension": "",
+        "group_mode": "single",
+        "base_filters": [],
+        "measures": [
+          {
+            "id": "m1",
+            "label": "Total Sales",
+            "column": "weekly_sales",
+            "aggregation": "sum",
+            "filters": [],
+            "role": "value",
+            "axis": "primary",
+            "chart_type": "",
+            "top_n": null,
+            "sort_direction": "desc"
+          }
+        ],
+        "presentation": {},
+        "style": {}
+      },
+      "subject_id": "1",
+      "etl_id": "0c31fce7-c8cc-4f44-9b3a-ca7ca5b7297f"
+    },
+    {
+      "id": 2,
+      "title": "Sales Comparison by Year",
+      "description": "Comparison of total sales performance across years",
+      "enabled": true,
+      "order": 99,
+      "chart_type": "bar",
+      "x_column": "std_year",
+      "y_column": "Total Sales",
+      "interaction_key_column": "std_year",
+      "supports_cross_filter": true,
+      "recommended_hierarchy": [
+        {
+          "column": "std_year",
+          "type": "string",
+          "operation": "full",
+          "min": "",
+          "max": ""
+        },
+        {
+          "column": "std_quarter",
+          "type": "string",
+          "operation": "full",
+          "min": "",
+          "max": ""
+        },
+        {
+          "column": "std_month",
+          "type": "string",
+          "operation": "full",
+          "min": "",
+          "max": ""
+        },
+        {
+          "column": "std_day",
+          "type": "string",
+          "operation": "full",
+          "min": "",
+          "max": ""
+        }
+      ],
+      "metric_spec": {
+        "title": "Sales Comparison by Year",
+        "description": "Comparison of total sales performance across years",
+        "edit_mode": "rebuild",
+        "chart_family": "bar",
+        "x_dimension": "std_year",
+        "x_role": "time",
+        "time_grain": "year",
+        "breakout_dimension": "",
+        "group_mode": "single",
+        "base_filters": [],
+        "measures": [
+          {
+            "id": "m1",
+            "label": "Total Sales",
+            "column": "weekly_sales",
+            "aggregation": "sum",
+            "filters": [],
+            "role": "value",
+            "axis": "primary",
+            "chart_type": "",
+            "top_n": null,
+            "sort_direction": "desc"
+          }
+        ],
+        "presentation": {},
+        "style": {}
+      },
+      "subject_id": "1",
+      "etl_id": "0c31fce7-c8cc-4f44-9b3a-ca7ca5b7297f"
+    },
+    {
+      "id": 3,
+      "title": "Quarterly Sales Share",
+      "description": "Quarterly share distribution within total sales",
+      "enabled": true,
+      "order": 99,
+      "chart_type": "pie",
+      "x_column": "std_quarter",
+      "y_column": "Total Sales",
+      "interaction_key_column": "std_quarter",
+      "supports_cross_filter": true,
+      "recommended_hierarchy": [
+        {
+          "column": "std_year",
+          "type": "string",
+          "operation": "full",
+          "min": "",
+          "max": ""
+        },
+        {
+          "column": "std_quarter",
+          "type": "string",
+          "operation": "full",
+          "min": "",
+          "max": ""
+        },
+        {
+          "column": "std_month",
+          "type": "string",
+          "operation": "full",
+          "min": "",
+          "max": ""
+        },
+        {
+          "column": "std_day",
+          "type": "string",
+          "operation": "full",
+          "min": "",
+          "max": ""
+        }
+      ],
+      "metric_spec": {
+        "title": "Quarterly Sales Share",
+        "description": "Quarterly share distribution within total sales",
+        "edit_mode": "rebuild",
+        "chart_family": "pie",
+        "x_dimension": "std_quarter",
+        "x_role": "time",
+        "time_grain": "quarter",
+        "breakout_dimension": "",
+        "group_mode": "single",
+        "base_filters": [],
+        "measures": [
+          {
+            "id": "m1",
+            "label": "Total Sales",
+            "column": "weekly_sales",
+            "aggregation": "sum",
+            "filters": [],
+            "role": "value",
+            "axis": "primary",
+            "chart_type": "",
+            "top_n": null,
+            "sort_direction": "desc"
+          }
+        ],
+        "presentation": {},
+        "style": {}
+      },
+      "subject_id": "1",
+      "etl_id": "0c31fce7-c8cc-4f44-9b3a-ca7ca5b7297f"
+    },
+    {
+      "id": 4,
+      "title": "Chart 5",
+      "description": "Area chart showing totals by date.",
+      "enabled": true,
+      "order": 99,
+      "chart_type": "area",
+      "x_column": "date",
+      "y_column": "Total",
+      "interaction_key_column": "date",
+      "supports_cross_filter": true,
+      "recommended_hierarchy": [
+        {
+          "column": "std_year",
+          "type": "string",
+          "operation": "full",
+          "min": "",
+          "max": ""
+        },
+        {
+          "column": "std_quarter",
+          "type": "string",
+          "operation": "full",
+          "min": "",
+          "max": ""
+        },
+        {
+          "column": "std_month",
+          "type": "string",
+          "operation": "full",
+          "min": "",
+          "max": ""
+        },
+        {
+          "column": "std_day",
+          "type": "string",
+          "operation": "full",
+          "min": "",
+          "max": ""
+        }
+      ],
+      "metric_spec": {
+        "title": "",
+        "description": "",
+        "edit_mode": "rebuild",
+        "chart_family": "area",
+        "x_dimension": "date",
+        "x_role": "time",
+        "time_grain": "month",
+        "breakout_dimension": "",
+        "group_mode": "single",
+        "base_filters": [],
+        "measures": [
+          {
+            "id": "measure_1",
+            "label": "Total",
+            "column": "store",
+            "aggregation": "sum",
+            "filters": [],
+            "role": "value",
+            "axis": "primary",
+            "chart_type": "area",
+            "top_n": null,
+            "sort_direction": "desc"
+          }
+        ],
+        "presentation": {},
+        "style": {
+          "palette": "vivid"
+        }
+      },
+      "subject_id": "1",
+      "etl_id": "0c31fce7-c8cc-4f44-9b3a-ca7ca5b7297f"
+    },
+    {
+      "id": 5,
+      "title": "Temperature and Sales Relationship",
+      "description": "Analysis of the correlation between temperature and weekly sales",
+      "enabled": true,
+      "order": 99,
+      "chart_type": "scatter",
+      "x_column": "temperature",
+      "y_column": "Average Sales",
+      "interaction_key_column": "temperature",
+      "supports_cross_filter": true,
+      "recommended_hierarchy": [],
+      "metric_spec": {
+        "title": "Temperature and Sales Relationship",
+        "description": "Analysis of the correlation between temperature and weekly sales",
+        "edit_mode": "rebuild",
+        "chart_family": "scatter",
+        "x_dimension": "temperature",
+        "x_role": "numeric",
+        "time_grain": "",
+        "breakout_dimension": "",
+        "group_mode": "single",
+        "base_filters": [],
+        "measures": [
+          {
+            "id": "m2",
+            "label": "Average Sales",
+            "column": "weekly_sales",
+            "aggregation": "avg",
+            "filters": [],
+            "role": "value",
+            "axis": "secondary",
+            "chart_type": "",
+            "top_n": null,
+            "sort_direction": "desc"
+          }
+        ],
+        "presentation": {},
+        "style": {},
+        "x_metric": "temperature",
+        "x_aggregation": "avg",
+        "y_metric": "weekly_sales",
+        "y_aggregation": "avg",
+        "label_dimension": "std_day_name"
+      },
+      "subject_id": "1",
+      "etl_id": "0c31fce7-c8cc-4f44-9b3a-ca7ca5b7297f"
+    },
+    {
+      "id": 6,
+      "title": "Store and Monthly Revenue Heatmap",
+      "description": "Shows sales intensity by store and month",
+      "enabled": true,
+      "order": 99,
+      "chart_type": "heatmap",
+      "x_column": "std_month",
+      "y_column": "Total Revenue",
+      "interaction_key_column": "std_month",
+      "supports_cross_filter": true,
+      "recommended_hierarchy": [
+        {
+          "column": "std_year",
+          "type": "string",
+          "operation": "full",
+          "min": "",
+          "max": ""
+        },
+        {
+          "column": "std_quarter",
+          "type": "string",
+          "operation": "full",
+          "min": "",
+          "max": ""
+        },
+        {
+          "column": "std_month",
+          "type": "string",
+          "operation": "full",
+          "min": "",
+          "max": ""
+        },
+        {
+          "column": "std_day",
+          "type": "string",
+          "operation": "full",
+          "min": "",
+          "max": ""
+        }
+      ],
+      "metric_spec": {
+        "title": "Store and Monthly Revenue Heatmap",
+        "description": "Shows sales intensity by store and month",
+        "edit_mode": "rebuild",
+        "chart_family": "heatmap",
+        "x_dimension": "std_month",
+        "x_role": "time",
+        "time_grain": "month",
+        "breakout_dimension": "std_day_name",
+        "group_mode": "grouped",
+        "base_filters": [],
+        "measures": [
+          {
+            "id": "m1",
+            "label": "Total Revenue",
+            "column": "weekly_sales",
+            "aggregation": "sum",
+            "filters": [],
+            "role": "value",
+            "axis": "primary",
+            "chart_type": "",
+            "top_n": null,
+            "sort_direction": "desc"
+          }
+        ],
+        "presentation": {},
+        "style": {}
+      },
+      "subject_id": "1",
+      "etl_id": "0c31fce7-c8cc-4f44-9b3a-ca7ca5b7297f"
+    }
+  ]
+}

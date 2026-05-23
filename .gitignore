@@ -1,0 +1,8 @@
+.env
+.docker-config/
+secrets/*
+!secrets/.gitkeep
+packages/
+data/
+logs/
+*.log

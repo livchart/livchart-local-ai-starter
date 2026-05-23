@@ -1,0 +1,28 @@
+{
+  "name": "LivChart Local AI Analytics",
+  "address": "",
+  "email": "github@livchart.com",
+  "phone": "",
+  "password_policy": {
+    "min_length": 6,
+    "change_period_days": 90
+  },
+  "security_policy": {
+    "idle_lock_minutes": 0
+  },
+  "report_theme": {
+    "primary_color": "#000000",
+    "footer_text": "",
+    "font_family": "DejaVuSans"
+  },
+  "active_plugins": [
+    "data_cleaner",
+    "date_standardizer",
+    "location_standardizer",
+    "text_variation_detector"
+  ],
+  "auto_etl_plugins": [
+    "date_standardizer",
+    "location_standardizer"
+  ]
+}

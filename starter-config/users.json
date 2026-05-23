@@ -1,0 +1,11 @@
+{
+  "admin": {
+    "id": 1,
+    "role": "admin",
+    "customer_name": "admin",
+    "display_name": "Admin",
+    "password": "gAAAAABpdJOa5hBDDAASrP4ZTVj11uB-_zEk7iq8ikw6qVfdVfG8iOAYreuuZceUB6KwY2eL5cIuGLROBBHNGviwaJFG_TVXSA==",
+    "created_at": "2026-01-24T12:40:42.706326",
+    "last_password_change": "2026-01-01"
+  }
+}
