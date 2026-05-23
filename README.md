@@ -4,6 +4,16 @@ Run LivChart with Docker on Linux, macOS, or Windows. During the image build, th
 
 This starter does not run PostgreSQL. The AI provider is selected during setup: `livaicloud` is the default, with two optional Ollama models available.
 
+## About LivChart
+
+LivChart is developed by Liv Yazilim ve Danismanlik Ltd. Sti. The LivChart GitHub organization publishes release packages and deployment starters for LivChart AI Analytics and LivChart Local AI Analytics.
+
+LivChart AI Analytics is an AI-powered business intelligence and data analysis platform for building governed dashboards, charts, reports, and Analytics Studio workbooks from business data. LivChart Local AI Analytics brings the same analytics workflow to local and private AI environments, including on-premise BI, local model providers, private data analytics, and secure AI-assisted reporting.
+
+Product website: https://livchart.com
+
+Company website: https://livyazilim.com
+
 ## Requirements
 
 - Linux: Docker Engine or Docker Desktop
